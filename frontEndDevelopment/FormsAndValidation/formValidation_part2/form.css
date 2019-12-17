@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+dt, dd {
+  display: inline-block;
+}
+
+dt {
+  width: 120px;
+}
+
+input {
+  border-radius: 5px;
+  height: 30px;
+  width: 200px;
+  padding-left: 5px;
+}
+
+[id*=credit-card] {
+  width: 75px;
+}
+
+[type=submit] {
+  background: rgb(94, 175, 132);
+  display: block;
+  font-size: 16px;
+  padding: 10px 10px 30px 10px;
+  width: 100px;
+}
+
+.error {
+  color: red;
+}
+
+.invalid {
+  border: 1px solid rgb(231, 77, 77);
+}

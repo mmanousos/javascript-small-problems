@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="form.css">
+  <title>Form</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="form.js"></script>
+</head>
+<body>
+  <form action="#" method="POST" novalidate>
+    <h1>Sign Up Form</h1>
+    <span class="error"></span>
+    <dl>
+      <dt><label for="first-name">First Name</label></dt>
+      <dd>
+        <input id="first-name" type="text" name="first-name" required>
+        <span class="error"></span>
+      </dd>
+    </dl>
+    <dl>
+      <dt><label for="last-name">Last Name</label></dt>
+      <dd>
+        <input id="last-name" type="text" name="last-name" required>
+        <span class="error"></span>
+      </dd>
+    </dl>
+    <dl>
+      <dt><label for="email">Email</label></dt>
+      <dd>
+        <input id="email" type="email" name="email" placeholder="name@domain.com" required pattern=".+@.+\..+">
+        <span class="error"></span>
+      </dd>
+    </dl>
+    <dl>
+      <dt><label for="password">Password</label></dt>
+      <dd>
+        <input id="password" type="password" name="password" required pattern=".{10,20}">
+        <span class="error"></span>
+      </dd>
+    </dl>
+    <dl>
+      <dt><label for="credit-card">Credit Card</label></dt>
+      <dd>
+        <input id="credit-card" type="text" name="credit-card" maxlength="4"> <span>-</span>
+        <input id="credit-card-2" type="text" name="credit-card" maxlength="4"> <span>-</span>
+        <input id="credit-card-3" type="text" name="credit-card" maxlength="4"> <span>-</span>
+        <input id="credit-card-4" type="text" name="credit-card" maxlength="4">
+      </dd>
+    </dl>
+    <dl>
+      <dt><label for="phone">Phone Number</label></dt>
+      <dd>
+        <input id="phone" type="text" name="phone" placeholder="xxx-xxx-xxxx" pattern="/\d{3}-\d{3}-\d{4}/">
+        <span class="error"></span>
+      </dd>
+    </dl>
+    <input type="submit" value="Sign Up">
+  </form>  
+  <section id="form-data">
+    <h2>Serialized Form</h2>
+    <p></p>
+  </section>
+</body>
+</html>
